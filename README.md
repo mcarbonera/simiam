@@ -4,6 +4,7 @@ simiam
 A MATLAB-based Educational Bridge Between Theory and Practice in Robotics.
 
 ps (mcarbonera).:
+
 -> This fork has the intent to add a controller that implements the navigation task
 with a Mamdani Fuzzy Inference System. 
 
