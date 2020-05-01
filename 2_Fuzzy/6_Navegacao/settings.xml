@@ -1,0 +1,75 @@
+<simulation>
+    <app type="ControlApp" />
+    
+    <robot type="Jubileu">
+        <supervisor type="jubileu.JSupervisor" />
+        <pose x="-3.2" y="0.9" theta="0" />
+        <driver ip="192.168.1.101" port="5005" />
+    </robot>
+    
+    <!-- Barreira central (limite superior) -->
+    <obstacle>
+        <pose x="-2.7" y="2" theta="0" />
+        <geometry>
+            <point x="0" y="0" />
+            <point x="1.6" y="0" />
+            <point x="1.6" y="0.2" />
+            <point x="0" y="0.2" />
+        </geometry>
+    </obstacle>
+    
+    <!-- Barreira central (limite esquerdo -->
+    <obstacle>
+        <pose x="-2.7" y="0.2" theta="1.5708" />
+        <geometry>
+            <point x="0" y="0" />
+            <point x="1.2" y="0" />
+            <point x="1.2" y="0.2" />
+            <point x="0" y="0.2" />
+        </geometry>
+    </obstacle>
+    
+    <!-- Barreira central (limite direito -->
+    <obstacle>
+        <pose x="-1.1" y="1.2" theta="-1.5708" />
+        <geometry>
+            <point x="0" y="0" />
+            <point x="2.6" y="0" />
+            <point x="2.6" y="0.2" />
+            <point x="0" y="0.2" />
+        </geometry>
+    </obstacle>
+    
+    <!-- Barreira central (limite inferior -->
+    <obstacle>
+        <pose x="-1.7" y="-1.4" theta="0" />
+        <geometry>
+            <point x="0" y="0" />
+            <point x="0.8" y="0" />
+            <point x="0.8" y="0.2" />
+            <point x="0" y="0.2" />
+        </geometry>
+    </obstacle>
+    
+    
+    <!-- Barreira Canto direito -->
+    <obstacle>
+        <pose x="2.7" y="0.7" theta="0" />
+        <geometry>
+            <point x="0" y="0" />
+            <point x="0.4" y="0" />
+            <point x="0.4" y="0.2" />
+            <point x="0" y="0.2" />
+        </geometry>
+    </obstacle>
+    
+    <obstacle>
+        <pose x="2.7" y="0.7" theta="1.5708" />
+        <geometry>
+            <point x="0" y="0" />
+            <point x="0.8" y="0" />
+            <point x="0.8" y="0.2" />
+            <point x="0" y="0.2" />
+        </geometry>
+    </obstacle>
+</simulation>
